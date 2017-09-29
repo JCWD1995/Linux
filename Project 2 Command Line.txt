@@ -1,0 +1,14 @@
+mkdir ~/sandbox
+mkdir ~/sandbox/css
+mkdir ~/sandbox/images
+mkdir ~/sandbox/scripts
+#setup directories
+touch ~/sandbox/index.html
+cp /var/www/images/logo[12].png ~/sandbox/images
+#copies both logo1 and logo2
+find /var/www/images/*.png >> ~/sandbox/avail-images
+ls ~/sandbox -R >> ~/sandbox/web-listing
+#make required files
+chmod 444 ~/sandbox/images/*
+chmod 444 ~/sandbox/*
+#root gets full control by default
